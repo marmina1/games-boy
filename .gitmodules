@@ -1,6 +1,0 @@
-[submodule "hangman"]
-	path = hangman
-	url = https://github.com/ownsupernoob2/Hangman.git
-[submodule "Hangman"]
-	path = Hangman
-	url = https://github.com/ownsupernoob2/Hangman
