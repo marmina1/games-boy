@@ -484,9 +484,18 @@
   var btn = document.getElementById('theme-toggle');
   var btnMobile = document.getElementById('theme-toggle-mobile');
   var darkHref = 'dark.css';
+  function setButtonText(t){
+    var lightLabel = 'BLACK MODE';
+    var darkLabel = 'WHITE MODE';
+    try{
+      if(btn) btn.textContent = (t === 'dark') ? darkLabel : lightLabel;
+      if(btnMobile) btnMobile.textContent = (t === 'dark') ? darkLabel : lightLabel;
+    }catch(e){}
+  }
   function applyTheme(t){
     if(t === 'dark') link.href = darkHref; else link.href = 'style.css';
     try{ localStorage.setItem('site-theme', t); }catch(e){}
+    setButtonText(t);
   }
   function toggle(){
     var cur = (link.getAttribute('href')||'style.css');
@@ -494,7 +503,7 @@
   }
   if(btn) btn.addEventListener('click', toggle);
   if(btnMobile) btnMobile.addEventListener('click', toggle);
-  try{ var saved = localStorage.getItem('site-theme'); if(saved) applyTheme(saved); }catch(e){}
+  try{ var saved = localStorage.getItem('site-theme'); if(saved) applyTheme(saved); else applyTheme('light'); }catch(e){ applyTheme('light'); }
 })();
 
     window.onscroll = function() {myFunction()};
