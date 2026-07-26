@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="referrer" content="origin">
   <title>Games</title>
-  <link rel="stylesheet" href="dark.css">
+  <link id="theme-link" rel="stylesheet" href="dark.css">
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
   <link rel="icon" href="images/logo.png" type="image">
 </head>
@@ -24,6 +24,10 @@
     </label>
     <div class="mobile-panel">
       <a href="#" class="style">Home</a>
+  <img id="me" src="images/me.jpg" alt="Me" width="300">
+  <br>
+  <p class="pargraph">Hello, my name is Mina. I'm 11 years old. I like making websites and apps but don't know how to publish apps yet.</p>
+  <br>
       <br>
       <a href="#about" class="style">About</a>
       <br>
@@ -38,6 +42,10 @@
     <div class="white-mode-mobile">
 
       <a href="index.html" style="color:rgb(0, 0, 0);">WHITE MODE</a>
+    </div>
+
+    <div class="black-mode-mobile">
+      <button id="theme-toggle-mobile" style="background:none;border:0;color:rgb(255,255,255);cursor:pointer">Toggle Theme</button>
     </div>
 
   </div>
@@ -74,6 +82,10 @@
     <div class="white-mode">
 
       <a href="index.html">WHITE MODE</a>
+    </div>
+
+    <div class="black-mode">
+      <button id="theme-toggle" style="background:none;border:0;color:#fff;cursor:pointer">Toggle Theme</button>
     </div>
   </div>
 
@@ -472,6 +484,27 @@
 
 
   <script src="script.js"></script>
+
+<script>
+// Theme toggle: switch between style.css and dark.css and remember choice
+(function(){
+  var link = document.getElementById('theme-link');
+  var btn = document.getElementById('theme-toggle');
+  var btnMobile = document.getElementById('theme-toggle-mobile');
+  var darkHref = 'dark.css';
+  function applyTheme(t){
+    if(t === 'dark') link.href = darkHref; else link.href = 'style.css';
+    try{ localStorage.setItem('site-theme', t); }catch(e){}
+  }
+  function toggle(){
+    var cur = (link.getAttribute('href')||'dark.css');
+    if(cur.indexOf('dark') !== -1) applyTheme('light'); else applyTheme('dark');
+  }
+  if(btn) btn.addEventListener('click', toggle);
+  if(btnMobile) btnMobile.addEventListener('click', toggle);
+  try{ var saved = localStorage.getItem('site-theme'); if(saved) applyTheme(saved); }catch(e){}
+})();
+</script>
 
 <script>
     window.onscroll = function() {myFunction()};
