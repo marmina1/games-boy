@@ -1,0 +1,678 @@
+
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+body{
+    background: #3f3f3f;
+    background: -webkit-linear-gradient(#ffffff, #ffffff, #707070);
+    background: -o-linear-gradient(#c1c1c1, white, #707070);
+    background: -moz-linear-gradient(#c1c1c1, white, #707070);
+    background: linear-gradient(#707070, rgb(168, 167, 167), #707070);
+    
+    color:white;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+   
+    
+body, html, #category, #category1, #category2, #phrases, #movies, #songs, #challenge, #introPage, #introText, #introText p, #sp, #mp, #sp1, #mp1, #multiPage, #singlePage #wordWrap, #wordWrap div, #restriction, #gamePage, #letterBank div, #challengeBank div, #videoPage{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#introPage, #singlePage, #multiPage, #videoPage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#introPage{
+    display: block;
+    height: 650px;
+    width: 850px;
+}
+.good{
+   
+    border: 2px solid rgb(252, 252, 252);
+    background:rgb(202, 202, 202);
+    border-radius: 15px;
+    border: solid black 1px;
+color:rgb(34, 34, 34);
+
+}
+
+#jo{
+  
+    float:left;
+
+}
+
+.just{
+    color:white;
+}
+
+#back{
+    margin:0;
+    margin-left:41%;
+    margin-bottom:45px;
+    
+   
+
+}
+.back{
+    margin:0;
+    margin-left:41%;
+    margin-bottom:45px;
+    
+   
+
+}
+
+#border{
+    text-align: center;
+    border-radius: 30px;
+    border:3px white solid;
+
+}
+
+
+
+    #introText{
+        width: 850px;
+        height: 260px;
+        margin: 10px auto;
+    }
+    #introText p, #multiText p{
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+    #buttonContainer{
+        width: 700px;
+        height: 75px;
+        margin: 50px auto;
+        
+
+    }
+    #sp, #mp, #sp1, .mp1, .mp4{
+        font-size: 35px;
+        width: 250px;
+        height: 75px;
+        float: right;
+        line-height: 75px;
+        text-align: center;
+        color: white;
+        background-color: cornflowerblue;
+        border-radius: 25px;
+        cursor: pointer;
+        border: 3px solid rgb(255, 255, 255);
+
+    }
+    #sp{
+        float: left;
+    }
+    #sp1{
+        margin: 69px 20px 0 0;
+    }
+    .mp1{
+        margin: 50px 20px 0 0;
+    }
+
+    .mp4{
+        float:left;
+        margin: 50px 20px 0 0;
+    }
+    #homeHangman, #hangman{
+        display: block;
+        margin: 50px auto 0 auto;
+        border: 2px solid rgb(252, 252, 252);
+        border-radius: 5px;
+        color:white;
+       
+    }
+    #hangman{
+        border: 2px solid black;
+     
+    }
+
+    #homeHangman{
+        border-radius: 43px;
+        border: 10px solid rgb(252, 252, 252);
+    }
+
+#singlePage{
+    display: none;
+    height: 560px;
+    width: 845px;
+}
+    #singlePage p{
+        font-size: 40px;
+        margin: 0px auto 40px auto;
+        text-align: center;
+    }
+    #categoryHolder{
+        width: 100%;
+        height: 335px;
+    }    
+    #category{
+        width: 700px;
+        height: 335px;
+        margin: 0 auto;
+    }    
+    #category1, #category2{
+        float: left;
+        width: 700px;
+        height: 150px;
+       
+    }
+    
+    #category1{
+        margin-bottom: 30px;
+    }
+
+  
+    #phrases, #movies, #songs, #challenge{
+        float: left;
+        width: 48%;
+        height: 100%;
+        font-size: 70px;
+        line-height: 150px;
+        text-align: center;
+        border: 2px solid rgb(214, 214, 214);
+        cursor: pointer;
+        border-radius:15px;
+    }
+    #challenge, #movies{
+        float: right;
+    }
+    #phrases{
+        color:#ffffff;
+        background: cornflowerblue;
+        background: -webkit-linear-gradient(left, cornflowerblue, rgb(156, 178, 218));
+        background: -o-linear-gradient(left, cornflowerblue, rgb(156, 178, 218));
+        background: -moz-linear-gradient(left, cornflowerblue, rgb(156, 178, 218));
+        background: linear-gradient(to right, cornflowerblue, rgb(156, 178, 218));
+    }
+    #movies{
+        color:#ffffff;
+        background: #147b14;
+        background: -webkit-linear-gradient(left, #15a715, #147b14);
+        background: -o-linear-gradient(right, #15a715, #147b14);
+        background: -moz-linear-gradient(right, #15a715, #147b14);
+        background: linear-gradient(to right, #15a715, #147b14);
+    }
+    #songs{
+        color:#ffffff;
+        background: #bc7a00;
+        background: -webkit-linear-gradient(left, #bc7a00, rgb(240, 162, 18));
+        background: -o-linear-gradient(left, #bc7a00, rgb(240, 162, 18));
+        background: -moz-linear-gradient(left, #bc7a00, rgb(240, 162, 18));
+        background: linear-gradient(to right, #bc7a00, rgb(240, 162, 18));
+    }
+    #challenge{
+        color:#ffffff;
+
+        background: #b10000;
+        background: -webkit-linear-gradient(left, rgb(212, 76, 76), #b10000);
+        background: -o-linear-gradient(right, rgb(212, 76, 76), #b10000);
+        background: -moz-linear-gradient(right, rgb(212, 76, 76), #b10000);
+        background: linear-gradient(to right, rgb(212, 76, 76), #b10000);
+    }
+#multiPage{
+    display: none;
+    height: 490px;
+    width: 845px;
+}    
+    #wordInput{
+        width: 845px;
+        height: 350px;
+        margin: 0px auto;
+    }
+    #multiText p{
+        font-size: 29px;
+    }
+    #input{
+        background:rgb(29, 29, 29);
+        font-family: sans-serif;
+        display: block;
+        margin: 0px auto;
+        padding: 10px;
+        font-size: 25px;
+        border:3px rgb(255, 255, 255) solid;
+        color:white;
+        border-radius: 15px;
+    }
+    #restriction{
+        font-family: sans-serif;
+        float: right;
+        position: relative;
+        right: 175px;
+        bottom: 22px;
+        font-size: 15px;
+    }
+    #characterCount{
+        width: 580px;
+        height: 35px;
+        margin: 21px auto 0 auto;
+        font-size: 25px;
+    }
+    #charContain{
+        margin: 0;
+        float: left;
+    }
+    #submit{
+        
+        font-size: 35px;
+        width: 200px;
+        height: 35px;
+        float: right;
+        line-height: 35px;
+        text-align: center;
+        color: white;
+        background-color: #00b100;
+        border-radius: 25px;
+        cursor: pointer;
+        
+
+    }
+#gamePage{
+    display: none;
+    text-align: center;
+}
+    #categoryName{
+        width: 100%;
+        margin: 20px auto 0px auto;
+        font-size: 75px;
+    }    
+    #wordWrap{
+        display: inline-block;
+        width: 830px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8, #letter9, #letter10, #letter11, #letter12, #letter13, #letter14, #letter15, #letter16, #letter17, #letter18, #letter19, #letter20, #letter21, #letter22, #letter23, #letter24, #letter25, #letter26, #letter27, #letter28, #letter29, #letter30, #letter31, #letter32, #letter33, #letter34, #letter35, #letter36, #letter37, #letter38, #letter39, #letter40, #letter41, #letter42, #letter43, #letter44, #letter45, #letter46, #letter47, #letter48, #letter49, #letter50, #letter51, #letter52, #letter53, #letter54, #letter55, #letter56, #letter57, #letter58, #letter59, #letter60, #letter61, #letter62, #letter63, #letter64, #letter65, #letter66, #letter67, #letter68, #letter69, #letter70, #letter71, #letter72, #letter73, #letter74, #letter75, #letter76, #letter77, #letter78, #letter79, #letter80, #letter81, #letter82, #letter83, #letter84, #letter85, #letter86, #letter87, #letter88, #letter89, #letter90, #letter91, #letter92, #letter93, #letter94, #letter95, #letter96, #letter97, #letter98, #letter99, #letter100{
+        font-family: 'Gloria Hallelujah', cursive;
+        width: 50px;
+        height: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
+        display: none;
+        float: left;
+        width: 50px;
+        height: 60px;
+        margin-right: 5px;
+    }
+    #letterBank, #challengeBank{
+        width: 780px;
+        height: 125px;
+        margin: 20px auto;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        -webkit-user-select: none;        
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    #letterBank div, #challengeBank div{
+        float: left;
+        width: 50px;
+        height: 58px;
+        margin: 0px 10px 10px 0px;
+        cursor: pointer;
+        background-color: #adadad;
+    }
+    #letterBank div:hover, #challengeBank div:hover{
+        background-color: #797979;
+    }
+    #letterBank div:active, #challengeBank div:active{
+        background-color: gray;
+        width: 50px;
+        font-size: 45px;
+        padding-top: 3px;
+    }
+    #results{
+        margin-top: 5px;
+        height: 70px;
+        visibility: hidden;
+        line-height: 70px;
+    }
+    #again, #home, #home1{
+        display: none;
+        width: 50%;
+        height: 65px;
+        margin: 0px auto 20px auto;
+        font-size: 35px;
+        line-height: 65px;
+        text-align: center;
+        color: white;
+        background-color: #8484e6;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    #home{
+        margin-top: 0px;
+    }
+    #home1{
+        margin-top: 32px;
+    }
+   
+#challengeGame{
+    text-align: center;
+}
+
+
+@media (max-width: 866px){
+    #introPage, #singlePage, #multiPage{
+        width: 500px;
+        height: 500px;
+    }
+        #introText{
+            width: 500px;
+            height: 85px;
+        }
+        #introText p, #multiText p{
+            font-size: 25px;
+            margin: 10px auto;
+        }
+        #buttonContainer{
+            width: 500px;
+            height: 60px;
+            margin: 20px auto;
+        }
+        #sp, #mp, #sp1, .mp1, .mp4{
+            font-size: 25px;
+            width: 175px;
+            height: 60px;
+            line-height: 60px;
+        }
+        #sp1{
+            margin: 25px 10px auto auto;
+        }
+        .mp1{
+            margin: 40px 10px auto auto;
+        }
+
+       
+
+        .mp4{
+                margin: 40px 10px auto auto;
+            
+        }
+        #homeHangman{
+            margin: 100px auto 0 auto;
+        }
+    #singlePage{
+        height: 345px;
+    }
+        #singlePage p{
+            font-size: 30px;
+            margin: 0px auto 20px auto;
+        }
+        #categoryHolder{
+            height: 180px;
+        }    
+        #category{
+            width: 100%;
+            height: 180px;
+        }    
+        #category1, #category2{
+            width: 100%;
+            height: 80px;
+        }
+        #category1{
+            margin-bottom: 20px;
+        }
+        #phrases, #movies, #songs, #challenge{
+            font-size: 35px;
+            line-height: 80px;
+        }
+    #multiPage{
+        height: 350px;
+    }    
+        #wordInput{
+            height: 250px;
+            width: 100%;
+        }
+        #multiText p{
+            font-size: 17.6px;
+        }
+        #input{
+            font-size: 20px;
+        }
+        #restriction{
+            right: 50px;
+            bottom: 18px;
+            font-size: 12px;
+        }
+        #characterCount{
+            width: 500px;
+            height: 30px;
+            margin: 15px auto 0 auto;
+            font-size: 20px;
+        }
+        #submit{
+            font-size: 25px;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+        }
+    
+        #categoryName{
+            margin: 0 auto;
+            font-size: 30px;
+        }    
+        #wordWrap{
+            display: inline-block;
+            width: 470px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8, #letter9, #letter10, #letter11, #letter12, #letter13, #letter14, #letter15, #letter16, #letter17, #letter18, #letter19, #letter20, #letter21, #letter22, #letter23, #letter24, #letter25, #letter26, #letter27, #letter28, #letter29, #letter30, #letter31, #letter32, #letter33, #letter34, #letter35, #letter36, #letter37, #letter38, #letter39, #letter40, #letter41, #letter42, #letter43, #letter44, #letter45, #letter46, #letter47, #letter48, #letter49, #letter50, #letter51, #letter52, #letter53, #letter54, #letter55, #letter56, #letter57, #letter58, #letter59, #letter60, #letter61, #letter62, #letter63, #letter64, #letter65, #letter66, #letter67, #letter68, #letter69, #letter70, #letter71, #letter72, #letter73, #letter74, #letter75, #letter76, #letter77, #letter78, #letter79, #letter80, #letter81, #letter82, #letter83, #letter84, #letter85, #letter86, #letter87, #letter88, #letter89, #letter90, #letter91, #letter92, #letter93, #letter94, #letter95, #letter96, #letter97, #letter98, #letter99, #letter100{
+            width: 28px;
+            height: 45px;
+            font-size: 30px;
+            line-height: 45px;
+        }
+        #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
+            width: 28px;
+            height: 45px;
+            margin-right: 3px;
+        }
+        #hangman{
+            margin: 20px auto 0 auto;
+        }
+        #letterBank, #challengeBank{
+            width: 430px;
+            height: 145px;
+            margin: 10px auto;
+            font-size: 35px;
+            line-height: 45px;
+        }
+        #letterBank div, #challengeBank div{
+            width: 44px;
+            height: 44px;
+            margin: 0px 3.5px 5px 0px;
+        }
+        #letterBank div:active, #challengeBank div:active{
+            width: 44px;
+            font-size: 27px;
+            padding-top: 0px;
+            padding-bottom: 3px;
+        }
+        #results{
+            margin-top: 5px;
+            height: 50px;
+            visibility: hidden;
+            line-height: 70px;
+        }
+        #again, #home, #home1{
+            display: none;
+            width: 50%;
+            height: 65px;
+            margin: 20px auto 20px auto;
+            font-size: 35px;
+            line-height: 65px;
+            text-align: center;
+            color: white;
+            background-color: #8e8ee7;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        #home{
+            margin-top: 0px;
+        }
+      
+    #challengeGame{
+        text-align: center;
+    }
+  
+}
+
+@media (max-width: 500px){
+    #introPage, #singlePage, #multiPage, #videoPage{
+        height: 100%;
+        width: 100%;
+        min-width: 365px;
+    }
+   
+        #introText{
+            width: 100%;
+        }
+        #introText p, #multiText p{
+            font-size: 18px;
+        }
+        #buttonContainer{
+            width: 90%;
+            height: 50px;
+        }
+        #sp, #mp, #sp1, .mp1 .mp4{
+            font-size: 20px;
+            width: 140px;
+            height: 50px;
+            line-height: 50px;
+        }
+        #sp1{
+            margin: 20px 10px auto auto;
+        }
+        .mp1{
+            margin: 30px 10px auto auto;
+        }
+
+        .mp4{
+            margin: 30px 10px auto auto;
+        }
+        #homeHangman{
+            margin: 70px auto 0 auto;
+        }
+    #singlePage{
+        height: 320px;
+    }
+        #categoryHolder{
+            margin: 0 auto;
+            width: 90%;
+            height: 180px;
+        }  
+        #singlePage p{
+            font-size: 25px;
+        }
+    #multiPage{
+        height: 330px;
+    }    
+        #multiText p{
+            font-size: 16px;
+        }
+        #input{
+            padding: 5px;
+            font-size: 15px;
+        }
+        #restriction{
+            right: 85px;
+            bottom: 15px;
+            font-size: 10px;
+        }
+        #characterCount{
+            width: 90%;
+            height: 25px;
+            font-size: 15px;
+        }
+        #submit{
+            font-size: 20px;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+        }
+    #gamePage{
+        min-width: 365px;
+    }
+        #categoryName{
+            font-size: 30px;
+        }    
+        #wordWrap{
+            width: 320px;
+            margin-top: 10px;
+            padding: 0px;
+        }
+        #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8, #letter9, #letter10, #letter11, #letter12, #letter13, #letter14, #letter15, #letter16, #letter17, #letter18, #letter19, #letter20, #letter21, #letter22, #letter23, #letter24, #letter25, #letter26, #letter27, #letter28, #letter29, #letter30, #letter31, #letter32, #letter33, #letter34, #letter35, #letter36, #letter37, #letter38, #letter39, #letter40, #letter41, #letter42, #letter43, #letter44, #letter45, #letter46, #letter47, #letter48, #letter49, #letter50, #letter51, #letter52, #letter53, #letter54, #letter55, #letter56, #letter57, #letter58, #letter59, #letter60, #letter61, #letter62, #letter63, #letter64, #letter65, #letter66, #letter67, #letter68, #letter69, #letter70, #letter71, #letter72, #letter73, #letter74, #letter75, #letter76, #letter77, #letter78, #letter79, #letter80, #letter81, #letter82, #letter83, #letter84, #letter85, #letter86, #letter87, #letter88, #letter89, #letter90, #letter91, #letter92, #letter93, #letter94, #letter95, #letter96, #letter97, #letter98, #letter99, #letter100{
+            width: 18px;
+            height: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
+            width: 18px;
+            height: 30px;
+            margin-right: 3px;
+        }
+        #letterBank, #challengeBank{
+            width: 310px;
+            height: 170px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        #letterBank div, #challengeBank div{
+            width: 41px;
+            height: 40px;
+            margin: 0px 3px 3px 0px;
+        }
+        #letterBank div:active, #challengeBank div:active{
+            width: 41px;
+            font-size: 25px;
+            padding-top: 0px;
+            padding-bottom: 3px;
+        }
+        #results{
+            margin-top: 5px;
+            height: 40px;
+        }
+        #again, #home, #home1{
+            width: 250px;
+            height: 45px;
+            margin: 10px auto;
+            font-size: 26px;
+            line-height: 45px;
+        }
+      
+}
+
+@media (max-width: 450px){
+    #restriction{
+        right: 60px;
+        bottom: 15px;
+        font-size: 10px;
+    }
+}
