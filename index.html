@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="referrer" content="origin">
   <title>Games</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="theme-link" rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
   <link rel="icon" href="images/logo.png" type="image">
 </head>
@@ -31,13 +31,12 @@
       <br>
       <a href="#cont" class="style">Contact</a>
       <br>
-      <a href="https://solar-sestyem.netlify.app/" class="style">Solar System</a>
+      <a href="https://solar-sestyem.netlify.com/" class="style">Solar System</a>
 
 
     </div>
     <div class="black-mode-mobile">
-
-      <a href="index.html" style="color:rgb(0, 0, 0);">DARK MODE</a>
+      <button id="theme-toggle-mobile" style="background:none;border:0;color:rgb(0,0,0);cursor:pointer">Toggle Theme</button>
     </div>
 
   </div>
@@ -58,7 +57,7 @@
         <li><a href="#about">About</a>
         <li><a href="#news">News</a>
           <ul>
-            <li> <a href="https://solar-sestyem.netlify.app/">Solar System</a></li>
+            <li> <a href="https://solar-sestyem.netlify.com/">Solar System</a></li>
            </ul>
         </li>
         <li><a href="#cont">Contact</a>
@@ -72,8 +71,7 @@
 
 
     <div class="black-mode">
-
-      <a href="dark.html">BLACK MODE</a>
+      <button id="theme-toggle" style="background:none;border:0;color:#000;cursor:pointer">Toggle Theme</button>
     </div>
   </div>
 
@@ -162,13 +160,17 @@
    <br>
    <br>
 
-   NEW game its Ludo
-   <br>
-   <br> 
+  NEW game its Ludo
+  <br>
+  <br> 
    
-   <img src="ludo-multiplayer-master/icon-256.png" width="300" alt="">
-   <br>
-   <br>
+  <img src="ludo-multiplayer-master/icon-256.png" width="300" alt="">
+  <br>
+  <br>
+  <img id="me" src="images/me.jpg" alt="Me" width="300">
+  <br>
+  <p class="pargraph">Hello, my name is Mina. I'm 11 years old. I like making websites and apps but don't know how to publish apps yet.</p>
+  <br>
    <a class="button1" href="Tetris/index.html">
      PLAY!!!!
    </a>
@@ -474,6 +476,25 @@
   <script src="script.js"></script>
 
 <script>
+// Theme toggle: switch between style.css and dark.css and remember choice
+(function(){
+  var link = document.getElementById('theme-link');
+  var btn = document.getElementById('theme-toggle');
+  var btnMobile = document.getElementById('theme-toggle-mobile');
+  var darkHref = 'dark.css';
+  function applyTheme(t){
+    if(t === 'dark') link.href = darkHref; else link.href = 'style.css';
+    try{ localStorage.setItem('site-theme', t); }catch(e){}
+  }
+  function toggle(){
+    var cur = (link.getAttribute('href')||'style.css');
+    if(cur.indexOf('dark') !== -1) applyTheme('light'); else applyTheme('dark');
+  }
+  if(btn) btn.addEventListener('click', toggle);
+  if(btnMobile) btnMobile.addEventListener('click', toggle);
+  try{ var saved = localStorage.getItem('site-theme'); if(saved) applyTheme(saved); }catch(e){}
+})();
+
     window.onscroll = function() {myFunction()};
                 var header = document.getElementById('myHeader');
                 var sticky = header.offsetTop;
